@@ -8,8 +8,9 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+
 stages:
-  -stage: meaningless_test
+- stage: meaningless_test
   displayName: Some random shell scripts
   steps:
   - script: echo Hello, world!
