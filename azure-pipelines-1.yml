@@ -33,7 +33,7 @@ stages:
         - task: Gradle@2
           inputs:
             gradleWrapperFile: 'gradlew'
-            tasks: 'build'
+            tasks: 'clean build'
             javaHomeOption: 'JDKVersion'
             jdkVersionOption: '11'
             jdkArchitectureOption: 'x64'
