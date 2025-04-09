@@ -10,15 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: Gradle@2
-  inputs:
-    gradleWrapperFile: 'gradlew'
-    tasks: 'build'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '11'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
 - task: Docker@2
   inputs:
     containerRegistry: 'SONCTR Docker Pull Registry'
